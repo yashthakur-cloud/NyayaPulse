@@ -29,14 +29,14 @@ export default function Home() {
     <main className="legal-shell">
       <section className="workspace">
         <header className="workspace-header">
-          <div className="brand-mark" aria-hidden="true">
+          <div className="brand-mark p-2" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none">
               <path d="M16 5v20M10 26h12M7 9h18M11 9l-4 9h8l-4-9Zm10 0-4 9h8l-4-9Z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
           <div>
-            <p className="brand-name">NyayaPulse</p>
-            <p className="brand-subtitle">Legal research assistant</p>
+            <p className="brand-name px-2">NyayaPulse</p>
+            <p className="brand-subtitle px-2">Legal research assistant</p>
           </div>
           <nav className="workspace-nav" aria-label="Workspace navigation">
             <span className="nav-item active">Research desk</span>
