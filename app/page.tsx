@@ -1,6 +1,7 @@
 "use client";
 import { FormEvent, useState } from "react";
 import { generateText } from "@/app/actions/aiActions";
+import ReactMarkdown from "react-markdown";
 
 export default function Home() {
   const [prompt, setPrompt] = useState<string>("");
@@ -94,7 +95,9 @@ export default function Home() {
                 <span className="response-status"><span className="secure-dot" />Research note</span>
               </div>
               <div className="response-divider" />
-              <p className="response-text">{output}</p>
+              <div className="response-text">
+                <ReactMarkdown>{output}</ReactMarkdown>
+              </div>
             </article>
           )}
         </div>
